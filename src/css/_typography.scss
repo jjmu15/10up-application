@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'CousineBold';
+  src:  url('../fonts/Cousine-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  font-weight: 500;
+  src:  url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  font-weight: 600;
+  src:  url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  font-weight: 700;
+  src:  url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+$cousineFont: 'CousineBold';
+$montserrat--bold: 'MontserratBold';
+$montserrat--medium: 'MontserratMedium';
+$montserrat--semiBold: 'MontserratSemiBold';
+
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: $black;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: $montserrat--bold;
+  font-size: 40px;
+  margin-bottom: 15px;
+
+  @media (min-width: $breakpoint--tablet) {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    font-size: 64px;
+  }
+}
+
+h2 {
+  font-family: $montserrat--bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+
+  @media (min-width: $breakpoint--tablet) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    font-size: 54px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-family: $cousineFont;
+}
+
+.subheading {
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding-left: 3px;
+
+    @media (min-width: $breakpoint--tablet) {
+      font-size: 14px;
+    }
+}
+
+p {
+  font-size: 16px;
+  font-family: $montserrat--medium;
+  line-height: 22px;
+  margin-bottom: 15px;
+
+  @media (min-width: $breakpoint--tablet) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}

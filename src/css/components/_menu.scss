@@ -1,0 +1,55 @@
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu {
+  background: $black;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+
+  @media (min-width: $breakpoint--tablet) {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    padding-top: 70px;
+  }
+}
+
+.menu__close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.menu-list {
+  padding: 0 15px;
+}
+
+.menu-list__item {
+  margin-bottom: 15px;
+}
+
+.menu-list__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: $montserrat--bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+  @media (min-width: $breakpoint--tablet) {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}

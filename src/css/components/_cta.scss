@@ -1,0 +1,52 @@
+.cta {
+  padding: 25px 10%;
+  text-align: center;
+
+  @media (min-width: $breakpoint--tablet) {
+    padding: 50px 10%;
+  }
+
+  &--background {
+    position: relative;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.cta__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  img {
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+
+    @media (min-width: $breakpoint--tablet) {
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+.cta__overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba($blue,0.2));
+}
+
+.cta__content {
+  position: relative;
+  z-index: 3;
+  padding: 25px 0;
+}

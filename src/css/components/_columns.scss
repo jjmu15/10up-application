@@ -1,0 +1,25 @@
+.columns {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+
+  @media (min-width: $breakpoint--tablet) {
+    flex-direction: row;
+  }
+}
+
+.column--focus {
+    @media (min-width: $breakpoint--tablet) {
+      flex-basis: 55%;
+      align-self: center;
+    }
+}
+
+.column-offset-left {
+  @media (min-width: $breakpoint--tablet) {
+    flex-basis: 40%;
+    margin-right: 5%;
+    position: relative;
+    left: -5%;
+  }
+}

@@ -1,0 +1,67 @@
+.hero {
+  background: #091523; // for browsers without gradient support
+  background-image: linear-gradient(#091523, #0E253F);
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 10%;
+
+  @media (min-width: $breakpoint--tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--behind-header {
+    position: relative;
+    z-index: 1;
+    top: -50px;
+
+    @media (min-width: $breakpoint--tablet) {
+      top: -60px;
+    }
+  }
+}
+
+.hero__content {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  flex-basis: 45%;
+
+  @media (min-width: $breakpoint--tablet) {
+    align-self: center;
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+}
+
+.hero__image {
+  z-index: 1;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $breakpoint--tablet) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    flex-basis: 55%;
+    bottom: -5%;
+  }
+}
+
+.hero__cta {
+  margin-top: 20px;
+
+  @media (min-width: $breakpoint--tablet) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $breakpoint--desktop) {
+    margin-top: 40px;
+  }
+}

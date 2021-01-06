@@ -1,0 +1,13 @@
+.header {
+  font-size: 40px;
+  font-family: $montserrat--bold;
+  padding: 10px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: $breakpoint--tablet) {
+    padding: 20px 40px 0;
+  }
+}
